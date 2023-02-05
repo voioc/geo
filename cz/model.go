@@ -1,11 +1,12 @@
-package main
+package cz
 
 import (
 	"encoding/binary"
-	"golang.org/x/text/encoding/simplifiedchinese"
 	"math/big"
 	"net"
 	"os"
+
+	"golang.org/x/text/encoding/simplifiedchinese"
 )
 
 var (
@@ -52,8 +53,7 @@ func (q *pointer) readData(length uint32) (rs []byte) {
 	return rs
 }
 
-func (q *pointer) findv4(ip string) (res result) {
-
+func (q *pointer) findV4(ip string) (res result) {
 	res = result{}
 	res.IP = ip
 	q.Offset = 0

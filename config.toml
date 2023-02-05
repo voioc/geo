@@ -1,0 +1,12 @@
+[log]
+    path = "access.log"
+    target = "geo.log"
+
+[geo]
+    source = "geo" # // cz or geo or all
+    primary = "cz" # if source == all then primary is cz or geo. default is cz
+    
+[riot]
+    amount = 2
+    gse ="data/riot/dict"
+    
